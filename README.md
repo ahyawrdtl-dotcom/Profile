@@ -57,8 +57,4 @@ Designed a parenting education application using a user-centered design approach
 
 * Email: [ahyawrdtl@gmail.com](mailto:ahyawrdtl@gmail.com)
 * LinkedIn: https://linkedin.com/in/wirdatulahya
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ahyawrdtl-dotcom&show_icons=true)
 
-![Python](https://img.shields.io/badge/Python-blue)
-![Laravel](https://img.shields.io/badge/Laravel-red)
-![Java](https://img.shields.io/badge/Java-orange)
