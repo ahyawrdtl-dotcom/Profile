@@ -136,4 +136,37 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         });
     }
+
+    /* ==========================================================================
+       Certificate Modal Handling
+       ========================================================================== */
+    const modal = document.getElementById('certificate-modal');
+    const certLink = document.getElementById('iefba-cert-link');
+    const closeModal = document.querySelector('.close-modal');
+
+    if (certLink && modal && closeModal) {
+        certLink.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            // slight delay to allow display:flex to apply before changing opacity for transition
+            setTimeout(() => {
+                modal.classList.add('show');
+            }, 10);
+        });
+
+        const hideModal = () => {
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300); // matches var(--transition-normal)
+        };
+
+        closeModal.addEventListener('click', hideModal);
+
+        // Close on outside click
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                hideModal();
+            }
+        });
+    }
 });

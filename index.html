@@ -24,7 +24,7 @@
 
     <header class="header" id="header">
         <div class="container header-container">
-            <a href="#" class="logo">WA<span>.</span></a>
+            <a href="#" class="logo">AHYA<span>.</span></a>
             <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
                 <i class="ph ph-list"></i>
             </button>
@@ -32,6 +32,7 @@
                 <ul id="primary-navigation" class="nav-list" data-visible="false">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link btn btn-primary nav-btn">Contact Me</a></li>
@@ -63,6 +64,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="hero-image reveal">
+                    <img src="me.jpeg" alt="Wirdatul Ahya">
+                </div>
             </div>
         </section>
 
@@ -78,12 +82,32 @@
                         <p>I am an Information Technology student at Telkom University with a strong interest in developing system-based and IoT solutions.</p>
                         <p>I have hands-on experience in building web applications, designing user interfaces, and implementing IoT systems. I enjoy working in teams, solving problems, and continuously improving my technical and non-technical skills.</p>
                         
-                        <div class="achievements-list">
-                            <h3>🏆 Achievements</h3>
-                            <ul>
-                                <li><i class="ph ph-medal"></i> Finalist – IEFBA 2025 Business Plan Competition</li>
-                                <li><i class="ph ph-medal"></i> 1st Place – POPDA XVI (200m Sprint)</li>
-                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>My <span>Achievements</span></h2>
+                    <div class="line"></div>
+                </div>
+                <div class="achievements-grid reveal">
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon"><i class="ph ph-medal"></i></div>
+                        <div class="achievement-info">
+                            <h3>Finalist – IEFBA 2025</h3>
+                            <p>Business Plan Competition</p>
+                            <span id="iefba-cert-link" class="achievement-link">View Certificate <i class="ph ph-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="achievement-card glass-card">
+                        <div class="achievement-icon"><i class="ph ph-trophy"></i></div>
+                        <div class="achievement-info">
+                            <h3>1st Place – POPDA XVI</h3>
+                            <p>200m Sprint Category</p>
                         </div>
                     </div>
                 </div>
@@ -302,6 +326,15 @@
             <p>&copy; 2026 Wirdatul Ahya. Built with ❤️ and Coffee.</p>
         </div>
     </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="iefba-certificate.png" alt="IEFBA Certificate" class="modal-image">
+            <div class="modal-caption">Finalist – IEFBA 2025 Business Plan Competition</div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
